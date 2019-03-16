@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title> Twitter </title>
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+	</head>
+
+	<body>
+		<div class="page_header default">
+            
+            <h1>Twitter</h1>
+            
+            <h3>My Timeline</h3>
+            <form method="get" action="/timeline">
+                <section>
+                    <input type="submit" value="Get Timeline" id="get-button" class = "button">
+                    {% for tweet in tweets_from_timeline %}
+                    <ul>
+                        <li>{{ tweet.text }}</li>
+                    </ul>
+                    {% endfor %}
+                    </ul>
+                </section>
+                    
+            </form>
+
+            <h3>Tweet Something</h3>
+            <form method="post" action="/tweet">
+                <section>
+                    <input type="text" id="tweet" class = "box" name="tweet" value="" placeholder="What's happening?" required="required" autofocus="autofocus"/><br>
+                    <br>
+                    <input type="submit" value="Tweet" id="post-button" class = "button">
+                    {% if response %}
+                    <ul>
+                        <li>{{ response }}</li>
+                    </ul>
+                    {% endif %}
+
+                </section>
+            </form>
+
+	</body>
