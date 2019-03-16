@@ -4,7 +4,7 @@ This programme uses Tweepy to access the Twitter API. Tweepy documentation and A
 
 ## Credentials & Authentication
 
-In order to authenticate, you will need to get your credentials from developer.twitter.com (under the 'Keys and tokens' tab once you have selected your app).
+In order to authenticate, you will need to get your credentials from https://developer.twitter.com/en/apps You can access these under the 'Keys and tokens' tab, once you have selected what app to work with. If you don't yet have any apps, you can create one using the 'Create an app' button at the top-right hand corner of the page.
 
 1. Input each one of your four keys and tokens in the `credentials_example.txt` file after the `=` symbol (with no quotation marks).
 
