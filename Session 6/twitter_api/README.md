@@ -14,7 +14,7 @@ In order to authenticate, you will need to get your credentials from https://dev
 
 ## Run the application
 
-Once you you've saved your credentials (see above) you can run this application by navigating to this directory in your command line and run: `python tweet.py`
+Once you've saved your credentials (see above) you can run this application by navigating to this directory in your command line and run: `python tweet.py`
 
 This will run your application locally, at port 5000: simply open up your browser and type `http://localhost:5000/`
 
